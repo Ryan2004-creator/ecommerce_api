@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User#importing in built user model
 from products.models import Products
 
 class Reviews(models.Model):
@@ -11,5 +11,6 @@ class Reviews(models.Model):
 
     def __str__(self):
        return f"{self.user.username} - {self.product.product_name}"
+       
 
 
